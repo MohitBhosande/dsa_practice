@@ -522,7 +522,7 @@ def display_hint(hint):
 def display_answer(answer):
     print(" ".join(answer))
 
-
+# bhosande mc
 def main():
     answer = random.choice(words)
     hint = ["_"]* len(answer)
@@ -533,6 +533,7 @@ def main():
     while is_running:
         display_man(wrong_guesses)
         display_hint(hint)
+        display_answer(answer)
         guess = input("enter the letter: ").lower()
 
 
